@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Student Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>Victor's Portfolio</h2>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <nav id="navbar">
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <i class="fa-solid fa-user"></i> About
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    <i class="fa-solid fa-diagram-project"></i> Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="planner.html" class="active">
+                    <i class="fa-solid fa-calendar-check"></i> Planner
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <i class="fa-solid fa-envelope"></i> Contact
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<div class="priority-guide">
+
+    <span class="high">
+        🔴 High
+    </span>
+
+    <span class="medium">
+        🟡 Medium
+    </span>
+
+    <span class="low">
+        🟢 Low
+    </span>
+
+</div>
+
+
+<section class="page-banner reveal">
+
+    <h1>Academic Planner</h1>
+
+    <p>Manage your assignments, quizzes and study schedule.</p>
+
+</section>
+
+
+
+<section class="planner reveal">
+
+    <h2>Study Planner</h2>
+
+         <p>
+         Stay organized by adding your assignments, quizzes,
+         projects and study goals.
+</p>
+    <div class="task-input">
+
+    <input
+        type="text"
+        id="taskInput"
+        placeholder="Task Title">
+
+    <input
+        type="date"
+        id="taskDate">
+
+    <select id="taskPriority">
+
+        <option value="High">High Priority</option>
+
+        <option value="Medium">Medium Priority</option>
+
+        <option value="Low">Low Priority</option>
+
+    </select>
+
+    <button id="addTaskBtn">
+        <i class="fa-solid fa-plus"></i> Add Task
+    </button>
+
+</div>
+
+<div class="task-summary">
+
+    <div class="summary-card">
+
+        <i class="fa-solid fa-list-check"></i>
+
+        <h3>Total</h3>
+
+        <span id="totalTasks">0</span>
+
+    </div>
+
+    <div class="summary-card">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h3>Completed</h3>
+
+        <span id="completedTasks">0</span>
+
+    </div>
+
+    <div class="summary-card">
+
+        <i class="fa-solid fa-hourglass-half"></i>
+
+        <h3>Pending</h3>
+
+        <span id="pendingTasks">0</span>
+
+    </div>
+
+</div>
+
+<ul id="taskList"></ul>
+
+</section>
+
+<footer>
+
+    <p>&copy; 2026 Student Portfolio Website</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/planner.js"></script>
+<button id="topBtn" title="Go to top">
+    ↑
+</button>
+</body>
+</html>

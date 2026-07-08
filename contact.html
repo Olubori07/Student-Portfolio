@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Student Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>Victor's Portfolio</h2>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <nav id="navbar">
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <i class="fa-solid fa-user"></i> About
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    <i class="fa-solid fa-diagram-project"></i> Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="planner.html">
+                    <i class="fa-solid fa-calendar-check"></i> Planner
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="active">
+                    <i class="fa-solid fa-envelope"></i> Contact
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<section class="page-banner reveal">
+    <h1>Contact Me</h1>
+    <p>Feel free to send me a message.</p>
+</section>
+
+<div class="contact-info">
+
+    <div class="info-box">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email</h3>
+        <p>o.okudele0355@miva.edu.ng</p>
+    </div>
+
+    <div class="info-box">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+234 703 021 2616</p>
+    </div>
+
+    <div class="info-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Location</h3>
+        <p>Ota, Ogun State, Nigeria</p>
+    </div>
+
+</div>
+
+<section class="contact-section reveal">
+
+    <div class="contact-form">
+
+        <h2>Send a Message</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address">
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Phone Number">
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Your Message"></textarea>
+
+            <button type="submit">
+
+    <i class="fa-solid fa-paper-plane"></i>
+
+   
+
+</button>
+                Send Message
+            </button>
+
+            
+        </form>
+        <p id="errorMessage"></p>
+        <p id="successMessage"></p>
+        
+    </div>
+
+</section>
+
+<footer>
+
+    <p>&copy; 2026 Student Portfolio Website</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/validation.js"></script>
+<button id="topBtn" title="Go to top">
+    ↑
+</button>
+</body>
+</html>
